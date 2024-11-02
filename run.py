@@ -136,8 +136,7 @@ def main():
     # scheduler = StepLR(optimizer, step_size=1, gamma=0.9)
 
     # 定义loss函数
-    # 注：nll 作用于 log_softmax 等价于交叉熵，感兴趣的同学可以自行推导
-    # https://blog.csdn.net/weixin_38145317/article/details/103288032
+    # 注：nll 作用于 log_softmax 等价于交叉熵
     loss_fn = F.nll_loss
 
     # 训练N个epoch
